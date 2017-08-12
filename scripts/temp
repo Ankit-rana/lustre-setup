@@ -1,0 +1,32 @@
+(hostname -I) localhost localhost.localdomain localhost4 localhost4.localdomain4
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost
+10.236.61.130   serv1
+10.236.61.132   serv2
+192.168.213.135 devvm
+134.6.27.79     hw
+192.168.213.158 ha-2
+192.168.213.157 ha-1 
+(hostname -I) localhost localhost.localdomain localhost4 localhost4.localdomain4
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost
+10.236.61.130   serv1
+10.236.61.132   serv2
+192.168.213.135 devvm
+134.6.27.79     hw
+192.168.213.158 ha-2
+192.168.213.157 ha-1 

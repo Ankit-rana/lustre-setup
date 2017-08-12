@@ -4,5 +4,5 @@
 	- vagrant up 
 	- vagrant ssh
 	- sh /vagrant/scripts/bootstrap.sh
-> **Note**
-> if files does not show up in synced folder, use "vagrant plugin install vagrant-vbguest"
+> **Note:**
+> - if files does not show up in synced folder, use "vagrant plugin install vagrant-vbguest"

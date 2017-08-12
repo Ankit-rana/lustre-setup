@@ -72,8 +72,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: "touch /etc/yum.repos.d/lustre-client.repo; cat <<'EOF' > /etc/yum.repos.d/lustre-client.repo\n[lustre-client]\nname=lustre-server\nbaseurl=https://downloads.hpdd.intel.com/public/lustre/lustre-2.10.0/el7/client/ \nenabled=1\ngpgcheck=0\nEOF"
   config.vm.provision "shell", inline: "touch /etc/yum.repos.d/e2fsprogs.repo; cat <<'EOF' > /etc/yum.repos.d/e2fsprogs.repo\n[e2fsprogs]\nname=e2fsprogs\nbaseurl=https://downloads.hpdd.intel.com/public/e2fsprogs/latest/el7/ \nenabled=1\ngpgcheck=0\nEOF"
   # install right kerne, set it to default for grub and boot with it  
-  config.vm.provision "shell", inline: "yum install -y kernel-3.10.0-514.21.1.el7_lustre;reboot;"
-  # grub2-set-default 0;"
+  config.vm.provision "shell", inline: "yum install -y kernel-3.10.0-514.21.1.el7_lustre;grub2-set-default 0;reboot"
   # config.vm.provision :reload
   # config.vm.provision  "shell", path: "bootstrap.sh"
   # config.vm.provision "shell", inline: <<-SHELL
